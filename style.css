@@ -11,7 +11,7 @@
 
 /* Navbar Properties */
 #navbar{
-    background-color: rgb(41, 41, 41);
+    background-color: #252d84;
     color:#fff;
 }
 
@@ -35,18 +35,58 @@
 }
 
 #navbar #current a{
-    color: orange;
+    color: #fbbb2b;
 }
 
 #navbar a:hover{
     color:rgba(255, 254, 254, 0.685);
 }
 
+/* Footer Properties */
+footer{
+    background-color:#252d84;
+}
+
+footer ul{
+    padding-top:30px;
+    list-style:none;
+    text-align: center;
+}
+
+footer li{
+    display:inline-block;
+}
+
+footer a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    padding-right:60px;
+    font-family:'Roboto', sans-serif;
+    line-height:1.6em;
+    font-weight:300;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+footer h1{
+    font-family:'Roboto', sans-serif;
+    font-size:14px;
+    text-align:center;
+    padding-top:30px;
+    margin-bottom:30px;
+    color: #fff;
+    font-weight:100;
+}
+
 /*  Home/index page Properties */
 .content_home{
     background-color: rgb(47, 47, 47);
     width: 100%;
-    padding-bottom:20px;
+    padding-bottom:100px;
+    padding-top:70px;
 }
 
 .content_home h1{
@@ -57,7 +97,6 @@
     text-align: center;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    margin-left:60px;
 }
 
 emphasize{
@@ -71,62 +110,120 @@ emphasize{
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
-    border:5px solid orange
+    border:5px solid #fbbb2b;
 }
 
 .content_home h2{
     color:rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    font-size:  7vw;
+    font-size:  4vw;
     font-weight: 700;
     margin-left:0.5em;
     position:relative;
-    bottom:1.1em;
-    left:20px;
+    bottom:1.6em;
+    left:15px;
 }
 
 #inline{
     width:60vw;
-    height:1px;
 }
 
 #profile_pic, #inline{
     display:inline-block;
 }
 
-.content_home h3{
-    color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
-    font-size:  40px;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 27%;
-}
-
 .content_home p{
     color:rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    font-size:  25px;
+    font-size:  27px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 27%;
+    margin-left: 25%;
 }
 
 .content_home a{
     color:orange;
     font-family: 'Roboto', sans-serif;
-    font-size:  25px;
+    font-size:  27px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 1em;
-    margin-left:27%;
+    margin-left:25%;
     text-decoration: none;
 }
 
 .content_home a:hover{
     text-decoration: underline;
+}
+
+/* General Styling */
+.main-content{
+    background-color: rgb(47, 47, 47);
+    width: 100%;
+    padding-bottom:40px;
+    padding-top:40px;
+}
+
+.main-content h1{
+    color:rgba(255, 255, 255, 0.4);
+    font-family: 'Roboto', sans-serif;
+    font-size:  4vw;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.main-content h2{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size:  2vw;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+.main-content h3{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size:  1.5vw;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+
+.main-content p{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size:  25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.main-content a{
+    color:orange;
+    font-family: 'Roboto', sans-serif;
+    font-size:  25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-decoration:none;
+}
+
+.main-content a:hover{
+    text-decoration:underline;
+}
+
+.job{
+    margin-top:40px;;
+}
+
+.job img{
+    width:40vw;
+    margin:auto;
+}
+
+.job p{
+    padding-left:40px;
+    text-align: left;
 }
 
 @media(max-width:850px){
@@ -137,16 +234,53 @@ emphasize{
     .content_home h1{
         font-size: 10vw;
     }
+
+    .content_home p, .content_home a{
+        font-size:20px;
+    }
 }
 
 @media(max-width:785px){
     .container{
-        width: 100%;
+        width: 97%;
     }
 }
 
 @media(max-width:460px){
     .content_home h1{
         font-size: 11vw;
+    }
+}
+
+@media(max-width:450px){
+    #profile_pic, #inline{
+        display:block;
+    }
+
+    #profile_pic{
+        width:50vw;
+        margin:auto;
+        margin-top:30px;
+    }
+
+    .content_home h2{
+        font-size:  6vw;
+        position:static;
+        margin-left:0;
+        margin-top:20px;
+    }
+
+    #navbar a{
+        font-size: 40px;
+    }
+
+    .content_home p, .content_home a{
+        font-size:  25px;
+        margin-left: 0;
+    }
+
+    footer a{
+        font-size:30px;
+        padding-right:60px;
     }
 }
