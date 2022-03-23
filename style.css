@@ -186,10 +186,18 @@ emphasize{
 .main-content p{
     color:rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    font-size:  25px;
+    font-size:  23px;
     font-weight: 400;
     margin-top:20px;
     margin-bottom: 20px;
+}
+
+.main-content li{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size:  23px;
+    font-weight: 400;
+    margin-top:5px;
 }
 
 .main-content a{
